@@ -5,3 +5,7 @@ li{
 h3{
     color: blueviolet;
 }
+
+ul{
+    color: rgb(224, 162, 230); /* rgb is allowed with hex too */
+}
