@@ -7,30 +7,50 @@
     </head>
 
     <body>
-        <img src="img/sign_up1.jpg">
-        <h3><em>NOTE: email and username are required!</em></h3>
+        <div class='sign_up_section'>
+            <img src='img/sign_up1.jpg'>
+            <h3><em>NOTE: First Name, Password, and Email are required!</em></h3>
+            <h5><em>(Sooner you can log in based on this info into the game, so remember that)</em></h5>
 
-        <form>
-            <label for='email'>E-mail: </label>
-            <input id='email' type='email' placeholder='iloveLWV@ukr.net' name='email' value='' required>
-            <label for='username'>Username: </label>
-            <input id='username' type='text' name='username' value='' placeholder='How to call you?' required>
-            <h3>Are you over 18? (if so, do you have a card or paypal?)</h3>
+            <div class='form'>
+                <form action='thank_you.html'>
+                    <label for='first_name'>First Name: </label>
+                    <input id='first_name' type='text' required>
 
-            <label for='age'>Yes: </label>
-            <input id='age' type='radio' name='age' value=''>
-            <label for='age'>No: </label>
-            <input id='age' type='radio' name='age' value=''>
+                    <label for='last_name'>Last Name: </label>
+                    <input id='last_name' type='text'>
 
-            <select>
-                <option value='paypal'>PayPal</option>
-                <option value='credit_card'>Credit Card</option>
-                <option value='no_pay'>Nothing</option>
-            </select>
+                    <p></p>
+                    <label for='email'>E-mail: </label>
+                    <input id='email' type='email' name='email' placeholder='iLoveWitches@ukr.net' required>
 
-            
-            <input type='submit' value='Send ticket!'>
-        </form>
+                    <label for='password'>Password: </label>
+                    <input id='password' type='password' name='pass' placeholder='**********' required>
+                    <input type='color' name='color'>
+
+                    <p><h3><em>Are you over 18?</em></h3></p>
+                    <label for='age'>Yes: </label>
+                    <input id='age' type='radio' name='age' value='yes' required>
+
+                    <label for='age'>No: </label>
+                    <input id='age' type='radio' name='age' value='no' required>
+
+                    <p><h3><em>Do you have a credit card or paypal?</em></h3></p>
+
+                    <p></p>
+                    <select name='pay_method'>
+                        <option value='paypal'>Paypal</option>
+                        <option value='card'>Credit Card</option>
+                        <option value='qiwi'>QIWI</option>
+                        <option value='no'>I dont have one</option>
+                    </select>
+
+                    <p></p>
+                    <input type='submit' value='Sign Up'>
+                </form>
+            </div>
+
+        </div>
     </body>
 
 </html>
