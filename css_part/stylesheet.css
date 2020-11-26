@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 li{
     color: blueviolet;
 }
@@ -8,4 +12,13 @@ h3{
 
 ul{
     color: rgb(224, 162, 230); /* rgb is allowed with hex too */
+}
+
+a {
+    font-style: italic;
+    color: rgb(255, 125, 190);
+}
+
+a:visited {
+    color: blueviolet;
 }
